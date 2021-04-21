@@ -1,0 +1,201 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-family:'Open Sans', sans-serif, Arial;
+	font-size:20px;
+	color:#ff7300;
+    text-align:justify;
+    overflow-x: hidden;
+    background: -o-linear-gradient(30deg, rgba(255,115,0,1) 0%, rgba(85,85,85,1) 15%, rgba(0,0,0,1) 100%) fixed center;
+    background: linear-gradient(60deg, rgba(255,115,0,1) 0%, rgba(85,85,85,1) 15%, rgba(0,0,0,1) 100%) fixed center;
+}
+
+
+figcaption{
+    position: absolute;
+    bottom:10%;
+    left: 50%;
+    transform:translateX(-50%);
+    -webkit-transform:translateX(-50%);
+    -moz-transform:translateX(-50%);
+    -ms-transform:translateX(-50%);
+    -o-transform:translateX(-50%);
+}
+
+#container {
+    width: 100vw;
+    height:100vh;
+    display:flex;
+	flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#game{
+    position:relative;
+    height:300px;
+    width:200px;
+    overflow: hidden;
+    background-color: black;
+}
+
+#game:hover{
+    box-shadow: 0px 0px 23px 8px #ff7300;
+    cursor:pointer;
+}
+
+.reload{
+	font-size:30px;
+	text-transform:uppercase;
+	cursor:pointer;
+	color:#3366ff;
+    margin:50px;
+    line-height: 2.4;
+}
+
+.reload:hover{
+	color:#668cff;
+}
+
+#hi-score{
+    margin-left:calc(10vw - 15px);
+}
+#result, #inputNumber, #howManyTries, #retry-or-back, #newRecord{
+    text-align: center;
+    margin:20px;
+}
+#blackjack{
+	position: absolute;
+    left:-8%;
+    top:0;
+    height:100%
+}
+
+#currentBetBoard{
+    width: 100vw;
+}
+
+#buttons{
+    width:20vw;
+}
+
+#buttons input{
+    margin:5px auto;
+    visibility: hidden;
+}
+
+#blackjackBoard{
+    width:75vw;
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+#dealerScore, #playerScore{
+    width:5vw;
+}
+
+#dealerBoard, #playerBoard{
+    width:50vw;
+    height:25vh;
+}
+
+#blackjackResult{
+    width: 75vw;
+    height:30px;
+}
+
+#bet5, #bet10, #bet25, #bet50, #bet100{
+    border-radius: 50%;
+    width:50px;
+    height:50px;
+    background-color: #fff;
+    color:black;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    font-weight: bold;
+    cursor:pointer;
+    text-align: center;
+    margin:3px;
+    display:inline-block;
+}
+
+#bet5{
+    border:10px solid #ccccff;
+}
+
+#bet10{
+    border:10px solid #cccc33;
+}
+
+#bet25{
+    border:10px solid #006600;
+}
+
+#bet50{
+    border:10px solid #38B0DE;
+}
+
+#bet100{
+    border:10px solid #cc0033;
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+.blackjackCard{
+    width:100px;
+    height:150px;
+    background-color: #FBF3D3;
+    border-radius: 15px;
+    font-size: 60px;
+    text-align: center;
+    vertical-align: middle;
+    float:left;
+    margin:0 2px;
+    color:#000;
+    font-weight: bold;
+}
+
+.blackjackCard > img{
+    height:60px;
+    width:60px;
+    margin:0 10px;
+}
+
+#secondCards{
+    display:inline;
+}
+
+#hiddenBlackjack{
+    width:100px;
+    height:150px;
+    border-radius: 15px;
+    margin:0 2px;
+    float:left;
+    background: -o-linear-gradient(45deg, rgba(47,51,54,1) 25%, rgba(255,115,0,1) 50%, rgba(47,51,54,1) 75%);
+    background: linear-gradient(45deg, rgba(47,51,54,1) 25%, rgba(255,115,0,1) 50%, rgba(47,51,54,1) 75%);
+}
+
+.submit{
+	padding:20px 40px;
+	background-color:#ff7300;
+	color:#2f3336;
+	letter-spacing:2px;
+	border:none;
+    display: block;
+    text-align: center;
+    margin: 10px auto 20px auto;
+    outline: none;
+}
+
+.submit:hover{
+	background-color:#ff9522;
+	color:#666;
+	cursor:pointer;
+}
+
